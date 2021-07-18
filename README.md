@@ -6,7 +6,7 @@ And this is an A* PathFinding Visualization.
 
 Hope you will like it
 
-#Basic Control
+# Basic Control
 
 Press Right Mouse Button to move Start Node and Target Node
 
