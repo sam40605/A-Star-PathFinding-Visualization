@@ -115,26 +115,26 @@ public class A_Star {
 		return neighbors;
 	}
 	
-    private int GetDistance(Node A , Node B) {
-    	int disrow = Math.abs(A.row - B.row);
-    	int discol = Math.abs(A.col - B.col);
+	private int GetDistance(Node A , Node B) {
+		int disrow = Math.abs(A.row - B.row);
+		int discol = Math.abs(A.col - B.col);
         
-    	if(disrow > discol) {
-        	return 14 * discol + 10 * (disrow - discol); 
-    	}
-        return 14 * disrow + 10 * (discol - disrow); 
-    }
+		if(disrow > discol) {
+			return 14 * discol + 10 * (disrow - discol); 
+		}
+		return 14 * disrow + 10 * (discol - disrow);
+	}
 
-    private void reTrace() {
-        Node currentNode = TargetNode.Parent;
+	private void reTrace() {
+		Node currentNode = TargetNode.Parent;
 
-        while(currentNode != StartNode && currentNode != null) {
-            currentNode.SetStatus("Path");
-            currentNode = currentNode.Parent;
-        }
+		while(currentNode != StartNode && currentNode != null) {
+			currentNode.SetStatus("Path");
+			currentNode = currentNode.Parent;
+		}
 
-        //Stop Timer 
-        Grid.finish = true;
-    }
+		//Stop Timer 
+		Grid.finish = true;
+	}
 }
 
