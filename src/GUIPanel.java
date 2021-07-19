@@ -64,7 +64,7 @@ public class GUIPanel extends JPanel {
 			setVerticalAlignment(SwingConstants.CENTER);
 			
 			//Set Label's Color
-           		c = _c;
+			c = _c;
 		}
 
 		public void paintComponent(Graphics g) {
