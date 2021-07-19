@@ -32,8 +32,8 @@ public class GUIPanel extends JPanel {
 		PauseButton = new Button(300 , 20 , "Pause" , style.Red);
 		ClearButton = new Button(500 , 20 , "Clear Path" , style.Blue);
 
-        //Since There is a Button
-        //So We set the Cursor to Hand
+        	//Since There is a Button
+        	//So We set the Cursor to Hand
 		StartButton.setCursor(style.Hand);
 
 		//Add Labels to GUIPanel
@@ -60,11 +60,11 @@ public class GUIPanel extends JPanel {
 			setBounds(x , y , getPreferredSize().width + 35 , 25);
 
 			//Set Text's Position
-            setHorizontalAlignment(SwingConstants.RIGHT);
-            setVerticalAlignment(SwingConstants.CENTER);
+            		setHorizontalAlignment(SwingConstants.RIGHT);
+            		setVerticalAlignment(SwingConstants.CENTER);
 
-            //Set Label's Color
-            c = _c;
+            		//Set Label's Color
+           		 c = _c;
 		}
 
 		public void paintComponent(Graphics g) {
@@ -88,11 +88,11 @@ public class GUIPanel extends JPanel {
 		// So we draw a Triangle and a Rectangle
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
-            g.setColor(c);
-            g.fillRect(0 , 0 , 25 , 25);
+            		g.setColor(c);
+           	 	g.fillRect(0 , 0 , 25 , 25);
 
-            g.setColor(c2);
-            g.fillPolygon(new int[] {0 , 25 , 0} , new int[] {0 , 25 , 25} , 3);
+            		g.setColor(c2);
+            		g.fillPolygon(new int[] {0 , 25 , 0} , new int[] {0 , 25 , 25} , 3);
 		}
 	}
 
@@ -111,15 +111,15 @@ public class GUIPanel extends JPanel {
 
 			//We wnat to create a beautiful Button
 			//So we disable some style
-            setBorder(null);
-            setContentAreaFilled(false);
-            setFocusPainted(false);
+            		setBorder(null);
+            		setContentAreaFilled(false);
+            		setFocusPainted(false);
 
-            //Set Text's Position
-            setHorizontalAlignment(SwingConstants.CENTER);
-            setVerticalAlignment(SwingConstants.CENTER);
+           	 	//Set Text's Position
+            		setHorizontalAlignment(SwingConstants.CENTER);
+            		setVerticalAlignment(SwingConstants.CENTER);
 
-            //Set Button's Color
+           		 //Set Button's Color
 			c = _c; 
 		}
 
