@@ -114,8 +114,8 @@ public class A_Star {
 
 		return neighbors;
 	}
-
-	private int GetDistance(Node A , Node B) {
+	
+    private int GetDistance(Node A , Node B) {
     	int disrow = Math.abs(A.row - B.row);
     	int discol = Math.abs(A.col - B.col);
         
