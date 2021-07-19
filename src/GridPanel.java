@@ -137,16 +137,16 @@ public class GridPanel extends JPanel {
 	//Clear (Visited , Closed , Path)
 	public void ClearPath() {
 		for(int row = 0 ; row < rows ; row++) {
-            		for(int col = 0 ; col < cols ; col++) {
-                		if (board[row][col].Status != "Barrier") {
-                   	 		board[row][col].Reset();
-                		}
-            		}
-        	}
-
-        	StartNode.SetStatus("Start");
-        	TargetNode.SetStatus("Target");
-
-        	repaint();
+			for(int col = 0 ; col < cols ; col++) {
+				if (board[row][col].Status != "Barrier") {
+					board[row][col].Reset();
+				}
+			}
+		}
+		
+		StartNode.SetStatus("Start");
+		TargetNode.SetStatus("Target");
+		
+		repaint();
 	}
 }
